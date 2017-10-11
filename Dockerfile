@@ -5,7 +5,7 @@ MAINTAINER Ryan Baumann <ryan.baumann@gmail.com>
 RUN apt-get update
 
 # Install Ruby, RubyGems, Bundler, ImageMagick, MySQL and Git
-RUN apt-get install -y imagemagick mysql-server git graphviz
+RUN apt-get install -y imagemagick mysql-server git graphviz qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
 # Install build deps for gems installed by bundler
 RUN apt-get build-dep -y ruby-mysql2 ruby-rmagick
 
